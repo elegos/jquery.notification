@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery.Notification Test</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link type="text/css" rel="stylesheet" href="../bower_components/jquery.gritter/css/jquery.gritter.css" />
+</head>
+<body>
+    <button onclick="javascript:notificationTest()">Test</button>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery.gritter/js/jquery.gritter.min.js"></script>
+    <script src="../src/jquery.notification.js"></script>
+    <script>
+        function notificationTest() {
+            // uncomment the call to test
+            
+            //$.Notification('Notification title', 'Notification message', null, null);
+            //$.Notification('Notification title', 'Notification message', {forceGritter: true}, null);
+            //$.Notification('Notification title', 'Notification message', {lang: 'en'}, null);
+            //$.Notification('Notification title', 'Notification message', {lang: 'en', dir: 'rtl'}, null);
+            //$.Notification('Notification title', 'Notification message', {lang: 'en', icon: 'img/e_mail.png'}, null);
+            //$.Notification('Notification title', 'Notification message', {lang: 'en', icon: 'img/e_mail.png', tag: 'customTag'}, null);
+            $.Notification(
+                'Notification title',
+                'Notification message',
+                {
+                    lang: 'en',
+                    icon: 'img/email.png',
+                    tag: 'customTag',
+                    forceGritter: true
+                },
+                {
+                    onShow: function () { console.log('jquery.notification: notification opened'); },
+                    onClose: function () { console.log('jquery.notification: notification closed'); }
+                }
+            );
+        }
+    </script>
+</body>
+</html>

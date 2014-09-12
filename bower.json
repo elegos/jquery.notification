@@ -1,0 +1,27 @@
+{
+  "name": "jQuery Notification",
+  "version": "1.0.0",
+  "description": "Notifications via HTML5 API with Gritter fallback",
+  "main": "./dist/jquery.notification.min.js",
+  "keywords": [
+    "notification",
+    "html5",
+    "javascript"
+  ],
+  "authors": [
+    "Giacomo Furlan"
+  ],
+  "license": "MIT",
+  "homepage": "http://giacomofurlan.name",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8.2",
+    "jquery.gritter": "*"
+  }
+}
