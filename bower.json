@@ -1,5 +1,5 @@
 {
-  "name": "jQuery Notification",
+  "name": "jquery.html5.notification",
   "version": "1.0.0",
   "description": "Notifications via HTML5 API with Gritter fallback",
   "main": "./dist/jquery.notification.min.js",
